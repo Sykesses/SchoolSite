@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Cinzel', serif;
+}
+
+header {
+    background-color: #ae0404; /* задаём цвет для заднего фона */
+    color: white; /* задаём цвет для текста */
+    text-align: center;  /* перемещаем текст в центр страницы */
+    padding: 15px;  /* создаём внутренний отступ от текста до края со всех сторон */
+}
+
+header h1{
+    font-size: 3em; 
+    margin-bottom: 1px;
+}
+
+nav {
+    text-align:end ; /* перемещаем текст в центр страницы */
+    background-color: black; /* задаем заднему фону черный цвет */
+    height: 30px;
+}
+
+nav a {
+    margin: 0 15px; /* делаем внешние отступы слева и справа в 15 пикселей */
+    text-decoration: none; /* убираем нижнее подчеркивание от ссылок */
+    color: white; /* задаем тексту ссылок такой же цвет, как у фона хедера */
+}
+
+nav a:hover {
+    color: orange;
+}
+
+.genres_films_menu{
+    width: 1400px;
+    height: 46px;
+}
+
+.selected{
+    border-bottom: 2px solid orange; /* добавляем оранжевую границу снизу, которая выглядит как подчеркивание */
+    font-weight: bold; /* Сделать текст жирным */
+}
+
+/* отодвигаем блок main от навигационного меню и от левого края страницы */
+main{ 
+    margin-top: 25px;  
+    margin-left: 25px; 
+}
+
+/* задаем стили для всех картинок в блоке main */
+main img{
+    width: 200px;
+    height: 300px;
+    border-radius: 25px;
+    border: 5px solid #dadada;
+    margin-top: 10px;
+}
+
+.films_serials{
+    display: flex; /* группируем 2 блока с фильмами и сериалами на одной строке */
+    justify-content: space-between; /* Распределение пространства между элементами футера */ 
+}
+
+.popular_films{
+    text-align: center; /* двигаем текст с заголовком в центр этого контейнера */
+    width: 750px;
+    padding: 0 0 0 5px;
+    float: left;  /* прижимаем этот контейнер к левому краю */
+}
+
+.popular_serials{
+    text-align: center;
+    width: 750px;
+    padding: 0 0 0 5px;
+    float: right;
+}
+
+.news_films{
+    margin-top: 20px;  /* отодвигаем этот контейнер от картинок */
+    text-align: center; /* выравниваем текст по центру контейнера */
+}
+
+.news_films_container{
+    display: flex;  /* выводим два блока на одну строку */
+    justify-content: space-between; /* Распределение пространства между элементами футера */
+    height: 235px; 
+    margin-left: 25px; /* отодвигаем этот контейнер от левого края */
+    margin-top: 10px; /* отодвигаем этот контейнер от заголовка */
+}
+
+.barbie{
+    border-radius: 25px;
+    border: 5px solid #dadada;
+    margin-right: 20px;
+    background-color: white;
+}
+
+.barbie_text{
+    display: flex;
+    justify-content: center;  /* Выравнивание по горизонтали */
+    align-items: center;  /* Выравнивание по вертикали */
+    height: 200px;  /* Высота блока. Необходима, чтобы обеспечить пространство для выравнивания текста внутри. */
+    padding: 0 10px;
+}
+
+.oppenheimer{
+    border-radius: 25px;
+    border: 5px solid #dadada;
+    margin-right: 25px;
+    margin-left: 5px;
+    background-color: white;
+}
+
+.oppenheimer_text{
+    display: flex;
+    justify-content: center;  /* Выравнивание по горизонтали */
+    align-items: center;  /* Выравнивание по вертикали */
+    height: 200px;  /* Высота блока. Необходима, чтобы обеспечить пространство для выравнивания текста внутри. */
+    padding: 0 10px;
+}
+
+ul.menu li{
+    float: left; /* прижимаем меню к левому краю и выстраиваем список в одну строку */
+    padding-left: 7px; /* задаем внутренние отступы слева в 7 пикселей */
+    list-style: none; /* убираем точки из оформления списка */
+    margin: 1px 6px 0 0; /* задаем внешние отступы сверху в 1 пиксель, справа в 6 пикселей */
+}
+
+ul.menu li a{
+    font-size: 1.5em; /* задаем размер шрифта  */
+    display: block; /* делаем этот элемент блочным вместо строчного */
+    height: 20px; /* задаем высоту для места, занимаемого каждой ссылкой, в 20 пикселей */
+    padding: 10px 32px; /* задаем внутренние отступы сверху и снизу в 10 пикселей, а также справа и слева в 32 пикселя */
+    color: #333; /* выбираем цвет для ссылки, как у всего сайта */
+    text-decoration: none; /* убираем нижнее подчеркивание у ссылки */
+    /* border: 2px solid #333;
+    border-radius: 25px; */
+}
+
+ul.menu li a:hover{
+    color: orange;
+}
+
+footer {
+    background-color: black; /* Установка цвета фона для футера */
+    color: #fff; /* Установка цвета текста для футера */
+    padding: 20px; /* Добавление отступов внутри футера */
+    margin-top: 20px; /* Добавление отступов над футером */
+    display: flex; /* Использование flexbox для расположения элементов футера */
+    justify-content: space-between; /* Распределение пространства между элементами футера */
+    align-items: center; /* Выравниваем по вертикали */
+}
+
+.footer-section {
+    width: 30%; /* Установка ширины каждого раздела в футере */
+}
+
+.footer-section h3 {
+    border-bottom: 1px solid #fff; /* Добавление нижней границы к заголовкам в футере */
+    padding-bottom: 10px; /* Добавление отступа снизу к заголовкам */
+}
+
+.copyright-text {
+    text-align: center; /* Выравниваем текст по горизонтали */
+} 
+
+.footer-section ul {
+    list-style-type: none; /* Удаление маркеров списка */
+}
+
+.footer-section ul li a {
+    color: #fff; /* Установка цвета ссылок */
+    text-decoration: none; /* Удаление подчеркивания ссылок */
+}
+
+.footer-section ul li a:hover {
+    color: orange; /* Изменение цвета ссылок при наведении */
+}

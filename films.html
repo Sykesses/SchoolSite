@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaGalaxy</title> <!-- тут можно написать любое название -->
+    <link rel="stylesheet" href="films.css"> <!-- подключили стили из отдельного файла -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- подключаем новый шрифт -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>MediaGalaxy</h1>
+        <p>Ваш гид в удивительный мир икно</p>
+    </header>
+
+    <nav>
+        <a class="selected" href="#">Главная</a> |  <!-- добавили класс -->
+        <a href="#">Фильмы</a> |
+        <a href="#">Сериалы</a> |
+        <a href="#">Наши контакты</a> |
+        <a href="#">Поиск</a>
+    </nav>
+
+    <main>
+        <div class="menu_content_main">
+            <div class="films_serials">  <!-- добавили новый блок див -->
+                <div class="popular_films">
+                    <h2>Популярные фильмы</h2>
+                    <div class="films">
+                        <a href="#"><img src="spider_man.jpg" alt="spider man: across the spider-verse"></a>
+                        <a href="#"><img src="puss_in_boots.png" alt="puss in boots 2: the last wish"></a>
+                        <a href="#"><img src="mario.png" alt="the super mario bros movie"></a>
+                    </div>
+                </div>
+    
+                <div class="popular_serials">
+                    <h2>Популярные сериалы</h2>
+                    <div class="serials">
+                        <a href="#"><img src="rick_morti.jpg" alt="rick and morti"></a>
+                        <a href="#"><img src="stranger_things.jpg" alt="stranger things"></a>
+                        <a href="#"><img src="GoT.webp" alt="game of thrones"></a>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="news_films">
+                <h2>Новости из мира кино</h2>
+                <div class="news_films_container">
+                    <div class="barbie"> <!-- добавили новый div отдельно для всего, что связано с этим фильмом -->
+                        <h3>Барби</h3>
+                        <div class="barbie_text">
+                            <p>
+                                Фильм о кукле Барби находится в разработке с 2009 года. Но только в позапрошлом году у него появились финальная версия сценария, режиссер и актеры. 
+                                Официальная дата премьеры фильма — 21 июля 2023 года. В тот же день состоится релиз музыкального альбома с композициями из фильма.
+                                Главную героиню выгоняют из Барбиленда, потому что она не соответствует его нормам красоты. 
+                                Тогда Барби начинает новую жизнь в реальном мире, где обнаруживает, что совершенства можно достичь только благодаря внутренней гармонии, а ее прошлое место обитания больше не кажется таким привлекательным, как прежде.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="oppenheimer"> <!-- добавили новый div отдельно для всего, что связано с этим фильмом -->
+                        <h3>Оппенгеймер</h3>
+                        <div class="oppenheimer_text">
+                            <p>
+                                После первого показа во французской столице Париже кинокритики и журналисты отметили, что фильм «Оппенгеймер» режиссера Кристофера Нолана у них действительно вызывал «страх и благоговейный трепет».
+                                По мнению многих профессиональных критиков, Киллиан Мерфи блестяще справился с ролью «отца атомной бомбы» Роберта Оппенгеймера. 
+                                Были оценены и другие актеры, и мастерство Нолана, как режиссера, и сценарий кинофильма, и глубина ряда сцен, но больше всего отметили глубину образа актера Киллиана Мерфи.
+                                Премьера кинофильма в мире должна будет пройти 21 июля.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <!-- текст можно вставить любой -->
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Фильмы</a></li>
+                <li><a href="#">Сериалы</a></li>
+                <li><a href="#">О нас</a></li>
+            </ul>
+        </div>
+        <div class="footer-section"> <!-- добавили класс  -->
+            <p class="copyright-text">&copy; 2023 MediaGalaxy</p> <!-- в HTML знак копирайта задается с помощью записи &copy -->
+        </div>
+    </footer>
+    
+
+</body>
+</html>
